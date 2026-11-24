@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woldra - Developer Apps</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <style>
+    /* Landing page specific styles */
+    .hero {
+      text-align: center;
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #6c63ff 0%, #48c6ef 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .app-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .app-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .app-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .app-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .app-card .links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .app-card .links a {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--accent);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .app-card .links a:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="app-name">Woldra</span>
+      <span style="font-size: 0.85rem; color: var(--text-secondary);">Developer</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero">
+      <h1>Woldra</h1>
+      <p>Developer portfolio and legal documentation hub for all Woldra applications.</p>
+    </div>
+
+    <h2 class="section-title">Applications</h2>
+    <div class="apps-grid">
+      <!-- Catris -->
+      <a href="apps/catris/privacyPolicy" class="app-card">
+        <h2>Catris</h2>
+        <p>[Description of Catris app goes here]</p>
+        <div class="links">
+          <a href="apps/catris/privacyPolicy">Privacy Policy</a>
+          <a href="apps/catris/termsOfService">Terms of Service</a>
+        </div>
+      </a>
+
+      <!-- Stepets (placeholder) -->
+      <a href="apps/stepets/privacyPolicy" class="app-card">
+        <h2>Stepets</h2>
+        <p>[Description of Stepets app goes here]</p>
+        <div class="links">
+          <a href="apps/stepets/privacyPolicy">Privacy Policy</a>
+          <a href="apps/stepets/termsOfService">Terms of Service</a>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Woldra. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

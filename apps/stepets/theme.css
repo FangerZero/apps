@@ -1,0 +1,21 @@
+/* ============================================
+   STEPETS THEME (Placeholder)
+   Customize these CSS variables for Stepets
+   ============================================ */
+
+:root {
+  /* Typography */
+  --font-body: 'Georgia', serif;
+  --font-heading: 'Helvetica Neue', Arial, sans-serif;
+
+  /* Colors - Stepets palette (customize!) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f0;
+  --text-primary: #2c3e50;
+  --text-secondary: #5d6d7e;
+  --accent: #27ae60;
+  --accent-hover: #219a52;
+  --border: #d5d8dc;
+  --footer-bg: #f0f0eb;
+  --footer-text: #888;
+}

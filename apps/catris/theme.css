@@ -1,0 +1,41 @@
+/* ============================================
+   CATRIS THEME
+   Customize these CSS variables to change
+   the look and feel of the Catris app pages
+   ============================================ */
+
+:root {
+  /* Typography */
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Colors - Catris playful palette */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f4ff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #555580;
+  --accent: #6c63ff;
+  --accent-hover: #5a52d5;
+  --border: #e0e0f0;
+  --footer-bg: #f5f5ff;
+  --footer-text: #8888aa;
+
+  /* Accent gradient for decorative elements */
+  --accent-gradient: linear-gradient(135deg, #6c63ff 0%, #48c6ef 100%);
+}
+
+/* Optional: Add app-specific decorative styles below */
+.page-title {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-content {
+  padding-top: 2.5rem;
+}
+
+.page-subtitle {
+  border-bottom-color: var(--accent);
+}
