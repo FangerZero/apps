@@ -43,14 +43,12 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 1.5rem;
-      text-decoration: none;
       color: inherit;
       transition: all 0.2s ease;
     }
 
     .app-card:hover {
       border-color: var(--accent);
-      transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
@@ -65,18 +63,21 @@
     .app-card p {
       font-size: 0.95rem;
       color: var(--text-secondary);
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
 
     .app-card .links {
       display: flex;
-      gap: 0.75rem;
+      gap: 0.5rem;
       flex-wrap: wrap;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
     }
 
     .app-card .links a {
       font-family: var(--font-heading);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
       padding: 0.35rem 0.75rem;
       border: 1px solid var(--border);
@@ -113,30 +114,30 @@
   <main class="main-content">
     <div class="hero">
       <h1>Woldra</h1>
-      <p>Developer portfolio and legal documentation hub for all Woldra applications.</p>
+      <p>An independent space for exploring ideas and bringing creative projects to life.</p>
     </div>
 
     <h2 class="section-title">Applications</h2>
     <div class="apps-grid">
       <!-- Catris -->
-      <a href="catris/privacyPolicy" class="app-card">
+      <div class="app-card">
         <h2>Catris</h2>
         <p>A cozy, cat-themed puzzle game where you clear lines, chase high scores, and encounter mischievous feline surprises along the way!</p>
         <div class="links">
           <a href="/catris/privacyPolicy">Privacy Policy</a>
           <a href="/catris/termsOfService">Terms of Service</a>
         </div>
-      </a>
+      </div>
 
       <!-- Stepets (placeholder) -->
-      <a href="stepets/privacyPolicy" class="app-card">
+      <div class="app-card">
         <h2>Stepets</h2>
-        <p>WIP!</p>
+        <p>Coming Soon!</p>
         <div class="links">
           <a href="/stepets/privacyPolicy">Privacy Policy</a>
           <a href="/stepets/termsOfService">Terms of Service</a>
         </div>
-      </a>
+      </div>
     </div>
   </main>
 
